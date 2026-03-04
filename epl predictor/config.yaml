@@ -1,0 +1,46 @@
+app_config:
+  data_dir: "/Users/jeffrey0712/Desktop/epl predictor/data"
+  fbref_cache_dir: "/Users/jeffrey0712/Desktop/epl predictor/cache/fbref"
+  model_cache_file: "/Users/jeffrey0712/Desktop/epl predictor/epl_models_v7_biasfix.joblib"
+  target_test_season: "2025/26"
+  euro_weight: 1.5
+  optuna_trials: 50
+  tscv_splits: 5
+  validation_fraction: 0.15
+
+  min_training_season: "2019/20"
+
+  ema_recent_window: 5
+  ema_alpha_form: 0.55
+  ema_alpha_goals: 0.52
+  ema_alpha_xg: 0.56
+  ema_alpha_short: 0.62
+  ema_alpha_long: 0.40
+
+  use_bookmaker_features: false
+  use_odds_movement_feature: false
+  min_odds_coverage_for_features: 0.60
+
+  fpl_cache_max_age_hours: 24.0
+  fpl_default_form: 1.0
+  fpl_key_player_cost_threshold: 70.0
+
+  odds_movement_placeholder_std: 0.0
+  xg_proxy_fit_min_matches: 80
+  xg_proxy_sot_coef: 0.23
+  xg_proxy_shot_coef: 0.05
+  xg_proxy_intercept: 0.20
+  xg_proxy_baseline_weight: 0.35
+
+  class_prior_blend: 0.08
+  threshold_oof_splits: 5
+
+  dixon_coles_max_goals: 8
+  dixon_coles_rho_min: -0.20
+  dixon_coles_rho_max: 0.35
+
+  kelly_cap_fraction: 0.15
+  kelly_fraction_scale: 0.50
+
+  standings_simulations: 1000
+  standings_random_seed: 42
