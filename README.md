@@ -7,6 +7,14 @@ EPL match prediction system with:
 - EV/Kelly betting analytics
 - Backtesting and champion projection (Monte Carlo)
 
+## Current Performance (Latest Local Benchmark)
+
+- TimeSeries CV accuracy: **53.5%**
+- Holdout accuracy (2025/26 test season, thresholded ensemble): **49.4%** on 271 matches
+- Benchmark date: **March 4, 2026**
+
+Note: performance can vary with data updates, retraining seed, and feature toggles in `config.yaml`.
+
 ## 1) Requirements
 
 - Python 3.10+
