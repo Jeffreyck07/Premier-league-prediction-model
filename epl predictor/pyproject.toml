@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epl-predictor"
+version = "0.7.0"
+description = "EPL match prediction with ensemble ML, Dixon-Coles, and betting analytics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jeffrey" }
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "lightgbm",
+  "xgboost",
+  "optuna",
+  "joblib",
+  "requests",
+  "PyYAML"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
